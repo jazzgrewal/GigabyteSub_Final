@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gigabytesub.RegistrationPageController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Personal Information">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="540.0" fitWidth="855.0" opacity="0.92">
+                           <image>
+                              <Image url="@gymRegistration3.jpeg" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="80.0" layoutY="133.0" prefHeight="308.0" prefWidth="351.0">
+                           <children>
+                              <FlowPane prefHeight="50.0" prefWidth="351.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="97.0" text="FirstName:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="memFNameText" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="351.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="97.0" text="LastName:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="memLNameText" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="56.0" prefHeight="50.0" prefWidth="351.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="97.0" text="ID:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="memIdText" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="103.0" prefHeight="50.0" prefWidth="351.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="97.0" text="Address:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="memAddText" prefHeight="39.0" prefWidth="225.0" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="149.0" prefHeight="30.0" prefWidth="594.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="97.0" text="City:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="memCityText" />
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="477.0" layoutY="131.0" prefHeight="329.0" prefWidth="364.0">
+                           <children>
+                              <FlowPane prefHeight="50.0" prefWidth="364.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="75.0" text="Govt. ID:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="memGovText" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="364.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="75.0" text="Gender:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="memGenText" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="56.0" prefHeight="50.0" prefWidth="364.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="75.0" text="Phone:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="memPhoneText" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="103.0" prefHeight="50.0" prefWidth="364.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="75.0" text="Email:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="memMailText" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="149.0" prefHeight="30.0" prefWidth="594.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="75.0" text="Age:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="memAgeText" />
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </VBox>
+                        <Label layoutX="243.0" layoutY="14.0" text="Registration Menu" textFill="WHITE">
+                           <font>
+                              <Font size="46.0" />
+                           </font>
+                        </Label>
+                        <Line endX="156.199951171875" endY="7.62939453125E-6" layoutX="463.0" layoutY="82.0" startX="-223.00003051757812" startY="7.62939453125E-6" stroke="#33c740" style="-fx-stroke-width: 4;" />
+                        <Label layoutX="275.0" layoutY="84.0" text="Personal Information Page " textFill="WHITE">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="subBtn" layoutX="332.0" layoutY="429.0" mnemonicParsing="false" onAction="#submitForm" prefHeight="71.0" prefWidth="175.0" style="-fx-background-color: green;" text="Add Member" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font></Button>
+                        <Button fx:id="closeBtn" layoutX="813.0" mnemonicParsing="false" onAction="#changeRequest" prefHeight="38.0" prefWidth="42.0" style="-fx-background-color: #ff1f1f;" text="X" textFill="#fdfdfd">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Plan">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="540.0" fitWidth="858.0" opacity="0.92">
+                           <image>
+                              <Image url="@gymRegistration3.jpeg" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="243.0" layoutY="144.0" prefHeight="367.0" prefWidth="383.0">
+                           <children>
+                              <FlowPane prefHeight="46.0" prefWidth="494.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="95.0" text="Plan: " textFill="#f4f3f3">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <ComboBox fx:id="comboPlan" prefWidth="150.0">
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                                       </FlowPane.margin>
+                                    </ComboBox>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="383.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="97.0" text="Name:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="planNameText" editable="false" prefWidth="152.0">
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                                       </FlowPane.margin>
+                                    </TextField>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="56.0" prefHeight="57.0" prefWidth="383.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="97.0" text="Monthly Fee:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="planFeeText" editable="false">
+                                       <FlowPane.margin>
+                                          <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                                       </FlowPane.margin>
+                                    </TextField>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="103.0" prefHeight="30.0" prefWidth="594.0">
+                                 <children>
+                                    <Label prefHeight="31.0" prefWidth="102.0" text="Description:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextArea fx:id="planDesctriptionText" editable="false" prefHeight="133.0" prefWidth="274.0" />
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </VBox>
+                        <Label layoutX="248.0" layoutY="14.0" text="Registration Menu" textFill="WHITE">
+                           <font>
+                              <Font size="46.0" />
+                           </font>
+                        </Label>
+                        <Line endX="156.199951171875" endY="7.62939453125E-6" layoutX="468.0" layoutY="79.0" startX="-223.00003051757812" startY="7.62939453125E-6" stroke="#33c740" style="-fx-stroke-width: 4;" />
+                        <Label layoutX="375.0" layoutY="89.0" text="Plan Page " textFill="WHITE">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="closeBtn" layoutX="813.0" mnemonicParsing="false" onAction="#changeRequest" prefHeight="38.0" prefWidth="42.0" style="-fx-background-color: #ff1f1f;" text="X" textFill="#fdfdfd">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Trainer">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="424.0" prefWidth="823.0">
+                     <children>
+                        <ImageView fitHeight="540.0" fitWidth="856.0" opacity="0.92">
+                           <image>
+                              <Image url="@gymRegistration3.jpeg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="schedTable" layoutX="13.0" layoutY="319.0" prefHeight="200.0" prefWidth="831.0">
+                          <columns>
+                            <TableColumn fx:id="schedTrainerCol" prefWidth="180.00005912780762" text="TrainerID" />
+                              <TableColumn fx:id="schedDayCol" prefWidth="188.800048828125" text="Day" />
+                              <TableColumn fx:id="schedSTimeCol" minWidth="0.0" prefWidth="195.199951171875" text="Start Time" />
+                              <TableColumn fx:id="schedETimeCol" prefWidth="296.0" text="End Time" />
+                          </columns>
+                        </TableView>
+                        <VBox layoutX="275.0" layoutY="119.0" prefHeight="156.0" prefWidth="234.0">
+                           <children>
+                              <AnchorPane prefHeight="72.0" prefWidth="389.0">
+                                 <children>
+                                    <Label layoutY="10.0" prefHeight="31.0" prefWidth="74.0" text="Trainer:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="comboTrainer" layoutX="81.0" layoutY="13.0" prefWidth="150.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="42.0" prefWidth="389.0">
+                                 <children>
+                                    <Label prefHeight="38.0" prefWidth="100.0" text="First Name:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="trainerFNameText" layoutX="82.0" layoutY="7.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="40.0" prefWidth="389.0">
+                                 <children>
+                                    <Label prefHeight="38.0" prefWidth="100.0" text="Last Name:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="trainerLNameText" layoutX="82.0" layoutY="7.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="38.0" prefWidth="100.0" text="Session Fee:" textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="trainerFeeText" layoutX="82.0" layoutY="7.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <Label layoutX="246.0" text="Registration Menu" textFill="WHITE">
+                           <font>
+                              <Font size="46.0" />
+                           </font>
+                        </Label>
+                        <Line endX="156.199951171875" endY="7.62939453125E-6" layoutX="467.0" layoutY="73.0" startX="-223.00003051757812" startY="7.62939453125E-6" stroke="#33c740" style="-fx-stroke-width: 4;" />
+                        <Label layoutX="358.0" layoutY="75.0" text="Trainer Page " textFill="WHITE">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="closeBtn" layoutX="813.0" mnemonicParsing="false" onAction="#changeRequest" prefHeight="38.0" prefWidth="42.0" style="-fx-background-color: #ff1f1f;" text="X" textFill="#fdfdfd">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="50.0" prefWidth="900.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="planWarn" layoutX="276.0" layoutY="9.0" prefHeight="32.0" prefWidth="348.0" text="Please Choose a Plan Before Submitting" textFill="#f8f5f5" visible="false" />
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>
